@@ -1,0 +1,9 @@
+Working directory is /home/xil375
+Running on host brncl-07
+Time is Wed Jul 26 12:05:43 PDT 2017
+Directory is /home/xil375
+Using 1 processors across 1 nodes
+wu1
+KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=5, p=2,
+           weights='uniform')

@@ -1,0 +1,40 @@
+/home/xil375/.virtualenvs/Aest/lib/python2.7/site-packages/sklearn/cross_validation.py:44: DeprecationWarning: This module was deprecated in version 0.18 in favor of the model_selection module into which all the refactored classes and functions are moved. Also note that the interface of the new CV iterators are different from that of this module. This module will be removed in 0.20.
+  "This module will be removed in 0.20.", DeprecationWarning)
+/home/xil375/.virtualenvs/Aest/lib/python2.7/site-packages/sklearn/grid_search.py:43: DeprecationWarning: This module was deprecated in version 0.18 in favor of the model_selection module into which all the refactored classes and functions are moved. This module will be removed in 0.20.
+  DeprecationWarning)
+/home/xil375/.virtualenvs/Aest/lib/python2.7/site-packages/sklearn/cross_validation.py:552: Warning: The least populated class in y has only 4 members, which is too few. The minimum number of labels for any class cannot be less than n_folds=10.
+  % (min_labels, self.n_folds)), Warning)
+Traceback (most recent call last):
+  File "MultiClass_MainScript.py", line 82, in <module>
+    dataframe = script.gridSearch('HMP', X, y, 2)
+  File "/home/xil375/MultiClass_Accuracies.py", line 108, in gridSearch
+    run_dataset(name, X, y, models, algs) 
+  File "/home/xil375/MultiClass_Accuracies.py", line 129, in run_dataset
+    clf.fit(X_train, y_train)
+  File "/home/xil375/.virtualenvs/Aest/lib/python2.7/site-packages/sklearn/grid_search.py", line 829, in fit
+    return self._fit(X, y, ParameterGrid(self.param_grid))
+  File "/home/xil375/.virtualenvs/Aest/lib/python2.7/site-packages/sklearn/grid_search.py", line 573, in _fit
+    for parameters in parameter_iterable
+  File "/home/xil375/.virtualenvs/Aest/lib/python2.7/site-packages/sklearn/externals/joblib/parallel.py", line 758, in __call__
+    while self.dispatch_one_batch(iterator):
+  File "/home/xil375/.virtualenvs/Aest/lib/python2.7/site-packages/sklearn/externals/joblib/parallel.py", line 608, in dispatch_one_batch
+    self._dispatch(tasks)
+  File "/home/xil375/.virtualenvs/Aest/lib/python2.7/site-packages/sklearn/externals/joblib/parallel.py", line 571, in _dispatch
+    job = self._backend.apply_async(batch, callback=cb)
+  File "/home/xil375/.virtualenvs/Aest/lib/python2.7/site-packages/sklearn/externals/joblib/_parallel_backends.py", line 109, in apply_async
+    result = ImmediateResult(func)
+  File "/home/xil375/.virtualenvs/Aest/lib/python2.7/site-packages/sklearn/externals/joblib/_parallel_backends.py", line 326, in __init__
+    self.results = batch()
+  File "/home/xil375/.virtualenvs/Aest/lib/python2.7/site-packages/sklearn/externals/joblib/parallel.py", line 131, in __call__
+    return [func(*args, **kwargs) for func, args, kwargs in self.items]
+  File "/home/xil375/.virtualenvs/Aest/lib/python2.7/site-packages/sklearn/cross_validation.py", line 1684, in _fit_and_score
+    test_score = _score(estimator, X_test, y_test, scorer)
+  File "/home/xil375/.virtualenvs/Aest/lib/python2.7/site-packages/sklearn/cross_validation.py", line 1741, in _score
+    score = scorer(estimator, X_test, y_test)
+  File "/home/xil375/.virtualenvs/Aest/lib/python2.7/site-packages/sklearn/metrics/scorer.py", line 91, in __call__
+    y_pred = estimator.predict(X)
+  File "/home/xil375/.virtualenvs/Aest/lib/python2.7/site-packages/sklearn/neighbors/classification.py", line 145, in predict
+    neigh_dist, neigh_ind = self.kneighbors(X)
+  File "/home/xil375/.virtualenvs/Aest/lib/python2.7/site-packages/sklearn/neighbors/base.py", line 343, in kneighbors
+    (train_size, n_neighbors)
+ValueError: Expected n_neighbors <= n_samples,  but n_samples = 42, n_neighbors = 50

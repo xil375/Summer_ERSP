@@ -1,0 +1,97 @@
+Working directory is /home/xil375
+Running on host brncl-06
+Time is Mon Jul 10 14:16:18 PDT 2017
+Directory is /home/xil375
+Using 1 processors across 1 nodes
+HMP1
+KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=5, p=2,
+           weights='uniform')
+{'n_neighbors': 2}
+
+
+CLASSIFICATION SCORE
+0.514851485149
+DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
+            max_features=None, max_leaf_nodes=None,
+            min_impurity_split=1e-07, min_samples_leaf=1,
+            min_samples_split=2, min_weight_fraction_leaf=0.0,
+            presort=False, random_state=1, splitter='best')
+{'max_features': 'sqrt', 'min_samples_split': 2, 'criterion': 'entropy', 'max_depth': 5, 'min_samples_leaf': 5}
+
+
+CLASSIFICATION SCORE
+0.425742574257
+OneVsRestClassifier(estimator=GaussianNB(priors=None), n_jobs=1)
+{}
+
+
+CLASSIFICATION SCORE
+0.376237623762
+OneVsRestClassifier(estimator=SVC(C=1.0, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape=None, degree=3, gamma='auto', kernel='rbf',
+  max_iter=-1, probability=False, random_state=1, shrinking=True,
+  tol=0.001, verbose=False),
+          n_jobs=1)
+{'estimator__kernel': 'rbf', 'estimator__C': 1}
+
+
+CLASSIFICATION SCORE
+0.524752475248
+OneVsRestClassifier(estimator=GaussianProcessClassifier(copy_X_train=True, kernel=None,
+             max_iter_predict=100, multi_class='one_vs_rest', n_jobs=1,
+             n_restarts_optimizer=0, optimizer='fmin_l_bfgs_b',
+             random_state=1, warm_start=False),
+          n_jobs=1)
+{}
+
+
+CLASSIFICATION SCORE
+0.0
+RandomForestClassifier(bootstrap=True, class_weight=None, criterion='gini',
+            max_depth=None, max_features='auto', max_leaf_nodes=None,
+            min_impurity_split=1e-07, min_samples_leaf=1,
+            min_samples_split=2, min_weight_fraction_leaf=0.0,
+            n_estimators=10, n_jobs=1, oob_score=False, random_state=1,
+            verbose=0, warm_start=False)
+{'max_features': 'sqrt', 'min_samples_split': 5, 'n_estimators': 100, 'max_depth': 3, 'min_samples_leaf': 5}
+
+
+CLASSIFICATION SCORE
+0.524752475248
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(100,), learning_rate='constant',
+       learning_rate_init=0.001, max_iter=200, momentum=0.9,
+       nesterovs_momentum=True, power_t=0.5, random_state=1, shuffle=True,
+       solver='adam', tol=0.0001, validation_fraction=0.1, verbose=False,
+       warm_start=False)
+{'solver': 'lbfgs', 'hidden_layer_sizes': (140,)}
+
+
+CLASSIFICATION SCORE
+0.386138613861
+OneVsRestClassifier(estimator=AdaBoostClassifier(algorithm='SAMME.R', base_estimator=None,
+          learning_rate=1.0, n_estimators=50, random_state=1),
+          n_jobs=1)
+{'estimator__base_estimator': RandomForestClassifier(bootstrap=True, class_weight=None, criterion='gini',
+            max_depth=None, max_features='auto', max_leaf_nodes=None,
+            min_impurity_split=1e-07, min_samples_leaf=1,
+            min_samples_split=2, min_weight_fraction_leaf=0.0,
+            n_estimators=10, n_jobs=1, oob_score=False, random_state=None,
+            verbose=0, warm_start=False), 'estimator__learning_rate': 1, 'estimator__n_estimators': 500}
+
+
+CLASSIFICATION SCORE
+0.455445544554
+ExtraTreesClassifier(bootstrap=False, class_weight=None, criterion='gini',
+           max_depth=None, max_features='auto', max_leaf_nodes=None,
+           min_impurity_split=1e-07, min_samples_leaf=1,
+           min_samples_split=2, min_weight_fraction_leaf=0.0,
+           n_estimators=10, n_jobs=1, oob_score=False, random_state=1,
+           verbose=0, warm_start=False)
+{'max_features': 'sqrt', 'min_samples_split': 2, 'n_estimators': 100, 'max_depth': 4, 'min_samples_leaf': 5}
+
+
+CLASSIFICATION SCORE
+0.524752475248

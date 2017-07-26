@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "MultiClass_MainScript.py", line 14, in <module>
+    import biom
+ImportError: No module named biom
